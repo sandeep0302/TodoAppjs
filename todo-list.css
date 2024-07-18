@@ -1,38 +1,45 @@
+/* todo-list.css */
 body {
   font-family: Arial;
+}
+.title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 0;
 }
 .todo-grid,
 .todo-input-grid {
   display: grid;
-  grid-template-columns: 200px 150px 100px;
+  grid-template-columns: 200px 150px 100px 80px;
   column-gap: 10px;
-  row-gap:10px;
+  row-gap: 10px;
   align-items: center;
-  
 }
-.todo-input-grid{
-margin-bottom: 10px;
-align-items: stretch;
-
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
 }
 .name-input,
 .due-date-input {
   font-size: 15px;
   padding: 6px;
 }
-.add-todo-button{
+.add-todo-button,
+.edit-todo-button,
+.delete-todo-button {
   background-color: green;
   color: white;
   border: none;
   font-size: 15px;
   cursor: pointer;
 }
-.delete-todo-button{
+.edit-todo-button {
+  background-color: rgba(128, 128, 128, 0.967);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.delete-todo-button {
   background-color: darkred;
-  color: white;
-  border: none;
-  font-size: 15px;
-  cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
 }
